@@ -7,6 +7,9 @@ project (demo)
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 11)
 
+#set the toole chain so it can recognize library installed by vcpkg
+set(CMAKE_TOOLCHAIN_FILE /home/lovoski/vcpkg/scripts/buildsystems/vcpkg.cmake)
+
 #config the path of the binary file will be generated
 #but be careful this is only the output diretory of the excutable file
 set (EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
