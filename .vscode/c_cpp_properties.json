@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                //glad that the json file included the install fir of vcpkg for me automatically
+                "${vcpkgRoot}/x64-linux/include"
+            ],
+            "defines": [],
+            "configurationProvider": "${default}"
+        }
+    ],
+    "version": 4
+}
