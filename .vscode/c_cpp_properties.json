@@ -4,7 +4,6 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                //glad that the json file included the install fir of vcpkg for me automatically
                 "${vcpkgRoot}/x64-linux/include"
             ],
             "defines": [],
@@ -13,3 +12,4 @@
     ],
     "version": 4
 }
+//glad that the json file included the install file of vcpkg for me automatically

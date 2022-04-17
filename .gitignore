@@ -1,0 +1,3 @@
+#the files in bin and build are set default to be compiled output
+build/
+bin/
