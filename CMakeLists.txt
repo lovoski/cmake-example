@@ -1,14 +1,15 @@
 # specify the minmal version of the cmake version required
 cmake_minimum_required (VERSION 3.10)
+
+# set the toole chain so it can recognize library installed by vcpkg
+set(CMAKE_TOOLCHAIN_FILE /home/lovoski/vcpkg/scripts/buildsystems/vcpkg.cmake)
+
 # specify the name of the project
 project (demo)
 
 # set the edition of the two languages
 set(CMAKE_C_STANDARD 11)
 set(CMAKE_CXX_STANDARD 11)
-
-# set the toole chain so it can recognize library installed by vcpkg
-set(CMAKE_TOOLCHAIN_FILE /home/lovoski/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 # config the path of the binary file will be generated
 # but be careful this is only the output diretory of the excutable file
