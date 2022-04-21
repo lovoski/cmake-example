@@ -1,7 +1,7 @@
-# specify the minmal version of the cmake version required
+# specify the minimum version of the cmake version required
 cmake_minimum_required (VERSION 3.10)
 
-# set the toole chain so it can recognize library installed by vcpkg
+# set the tool chain so it can recognize library installed by vcpkg
 set(CMAKE_TOOLCHAIN_FILE /home/lovoski/vcpkg/scripts/buildsystems/vcpkg.cmake)
 
 # specify the name of the project
@@ -57,3 +57,4 @@ add_executable (main ${SRC_LIST} ${LIB_LIST})
 # add_executable(NAME_OF_EXECUTABLE ${SRC_LIST})
 # target_link_libraries(NAME_OF_EXECUTABLE ${PROJECT_SOURCE_DIR}/lib/*.a)
 # the parameter ${PROJECT_SOURCE_DIR}/lib/*.a can be specified to be any static lib file in the lib diretory
+# be careful this lin_library stuff can't be applied to shared libraries, I'm still working on it
